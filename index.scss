@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(to bottom right, #26b9c8, #0457a0);
+}
+
+@mixin text-border($line-width, $color) {
+  text-shadow: -#{$line-width} 0 #{$color}, 0 #{$line-width} #{$color}, #{$line-width} 0 #{$color}, 0 -#{$line-width} #{$color};
+}
+
+#spongebob {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 7%;
+
+  display: flex;
+  flex-flow: column;
+
+  #input {
+    font-size: 3rem;
+    flex-grow: 10;
+    color: black;
+    background: linear-gradient(to bottom right, #d5d421, #fff56c);
+    border: 5px solid #776116;
+    border-bottom: 0px;
+    resize: none;
+    padding: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    outline: 0;
+  }
+
+  #shirt {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    border: 5px solid black;
+  }
+
+  #copy-button {
+    flex-grow: 1;
+    color: #f93c3f;
+    @include text-border(2px, #310708);
+    font-size: 3rem;
+    background: linear-gradient(to top, #94481a, #984412);
+    outline: 0;
+
+    border: 5px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &:hover {
+      background: linear-gradient(to top, #ab5a28, #b0541e);
+      transform: translateY(-2px);
+    }
+    
+    &:active {
+      margin-top: -2px;
+      transform: translateY(2px);
+    }
+  }
+}

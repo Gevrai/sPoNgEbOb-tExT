@@ -1,0 +1,18 @@
+[package]
+name = "spongebob-text"
+version = "1.0.0"
+edition = "2021"
+description = "sPoNgEbOb tExT GeNeRaToR"
+readme = "README.md"
+repository = "https://github.com/gevrai/sPoNgEbOb-tExT"
+license = "MIT"
+keywords = ["yew", "trunk"]
+categories = ["gui", "wasm", "web-programming"]
+
+[dependencies]
+yew = "0.19"
+yew-hooks = "0.1.56"
+wasm-bindgen = "0.2.83"
+web-sys = "0.3.60"
+rand = "0.8.5"
+getrandom = { version = "0.2", features = ["js"] }
