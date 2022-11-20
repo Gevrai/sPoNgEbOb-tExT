@@ -1,5 +1,7 @@
 Easy and dumb project to test out yew.
 
+See the masterpiece at https://gevrai.github.io/sPoNgEbOb-tExT/
+
 MIT license.
 
 ### Install
