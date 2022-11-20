@@ -10,8 +10,11 @@ pub fn app() -> Html {
     }
 }
 
+#[derive(Properties, PartialEq, Eq)]
+pub struct EmptyProps;
+
 #[function_component(SpongebobText)]
-pub fn spongebob_text() -> Html {
+pub fn spongebob_text(_: &EmptyProps) -> Html {
     let text = use_state(|| "".to_owned());
     let copied_state = use_state(|| false);
 
